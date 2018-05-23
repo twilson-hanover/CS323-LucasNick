@@ -1,12 +1,10 @@
 package edu.hanover.cs323_lucasnickproject;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Random;
 
 public class NumberGenerator {
     Random rand = new Random();
-    List<String> getNumber(String number) {
-        int myNumber = new ArrayList<~>();
+    int myNumber;
+    int getNumber(String number) {
         if (number.equals("5")) {
             myNumber = rand.nextInt(5);
         }

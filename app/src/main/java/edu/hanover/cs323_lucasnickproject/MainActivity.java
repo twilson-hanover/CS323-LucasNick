@@ -5,9 +5,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Spinner;
 import android.widget.TextView;
-import java.util.List;
 
 public class MainActivity extends Activity {
+    private NumberGenerator generator = new NumberGenerator();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +17,6 @@ public class MainActivity extends Activity {
 
     public void onClickFindNumber(View view) {
         TextView myNumber = (TextView) findViewById(R.id.myNumber);
-        Spinner number = (Spinner) findViewById(R.id.number);
+        Spinner spin = (Spinner) findViewById(R.id.spin);
     }
 }
