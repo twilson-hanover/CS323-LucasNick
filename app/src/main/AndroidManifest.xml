@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".GuessActivity" />
-        <activity android:name=".CorrectActivity"></activity>
+        <activity android:name=".CorrectActivity" />
+        <activity android:name=".IncorrectActivity"></activity>
     </application>
 
 </manifest>
