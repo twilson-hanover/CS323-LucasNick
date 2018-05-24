@@ -12,7 +12,7 @@
     tools:context=".GuessActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/enterGuess"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="10"
@@ -32,6 +32,6 @@
         android:layout_height="wrap_content"
         android:layout_weight="2"
         android:layout_gravity="center"
-        android:onClick="onClickValidateGuess"
-        android:text="Enter" />
+        android:text="Enter"
+        android:onClick="onClickValidateGuess" />
 </LinearLayout>

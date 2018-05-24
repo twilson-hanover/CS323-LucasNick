@@ -8,7 +8,6 @@ import android.widget.TextView;
 import android.content.Intent;
 
 public class MainActivity extends Activity {
-    private NumberGenerator generator = new NumberGenerator();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,9 +16,10 @@ public class MainActivity extends Activity {
     }
 
     public void onClickGuessNumber(View view) {
-        TextView myNumber = (TextView) findViewById(R.id.myNumber);
         Spinner spin = (Spinner) findViewById(R.id.spin);
+        String spinOdds = String.valueOf(spin.getSelectedItem());
         Intent intent = new Intent(this, GuessActivity.class);
+        intent.putExtra("odds", spinOdds);
         startActivity(intent);
     }
 }
