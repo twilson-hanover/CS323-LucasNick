@@ -16,7 +16,7 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
     }
 
-    public void onClickFindNumber(View view) {
+    public void onClickGuessNumber(View view) {
         TextView myNumber = (TextView) findViewById(R.id.myNumber);
         Spinner spin = (Spinner) findViewById(R.id.spin);
         Intent intent = new Intent(this, GuessActivity.class);
