@@ -13,4 +13,6 @@ public class GuessActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_guess);
     }
+
+
 }
