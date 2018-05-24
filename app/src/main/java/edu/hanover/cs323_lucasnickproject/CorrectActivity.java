@@ -4,7 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.content.Intent;
-import android.widget.Toast;
+import android.widget.TextView;
 
 public class CorrectActivity extends Activity {
 
@@ -12,13 +12,15 @@ public class CorrectActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_correct);
+        String randNum = getIntent().getExtras().getString("randNum");
+        String guess = getIntent().getExtras().getString("guess");
+        TextView randNumT = (TextView) findViewById(R.id.textView4);
+        TextView guessT = (TextView) findViewById(R.id.textView5);
+        randNumT.setText("Result: " + randNum);
+        guessT.setText("Your Guess: " + guess);
     }
 
     public void onClickMainActivity(View view) {
-        String text = "You have won What are the Odds!";
-        int duration = Toast.LENGTH_LONG;
-        Toast toast = Toast.makeText(this, text, duration);
-        toast.show();
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }

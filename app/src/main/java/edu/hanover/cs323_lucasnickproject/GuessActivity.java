@@ -2,10 +2,13 @@ package edu.hanover.cs323_lucasnickproject;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.EditText;
 import android.content.Intent;
+import android.widget.Toast;
+
 import java.util.Random;
 
 public class GuessActivity extends Activity {
@@ -24,15 +27,24 @@ public class GuessActivity extends Activity {
         Random r = new Random();
         int randNum = r.nextInt(oddsInt)+1;
         if (guess == randNum) {
+            String text = "You have won What are the Odds!";
+            int duration = Toast.LENGTH_LONG;
+            Toast toast = Toast.makeText(this, text, duration);
+            toast.show();
             Intent intent = new Intent(this, CorrectActivity.class);
-            intent.putExtra("randNum", randNum);
-            intent.putExtra("guess", guess);
+            intent.putExtra("randNum", String.valueOf(randNum));
+            intent.putExtra("guess", String.valueOf(guess));
+            Log.d("randNum", String.valueOf(randNum));
             startActivity(intent);
         }
         else {
+            String text = "Maybe next time!";
+            int duration = Toast.LENGTH_LONG;
+            Toast toast = Toast.makeText(this, text, duration);
+            toast.show();
             Intent intent = new Intent(this, IncorrectActivity.class);
-            intent.putExtra("randNum", randNum);
-            intent.putExtra("guess", guess);
+            intent.putExtra("randNum", String.valueOf(randNum));
+            intent.putExtra("guess", String.valueOf(guess));
             startActivity(intent);
         }
     }
