@@ -34,7 +34,6 @@ public class GuessActivity extends Activity {
             Intent intent = new Intent(this, CorrectActivity.class);
             intent.putExtra("randNum", String.valueOf(randNum));
             intent.putExtra("guess", String.valueOf(guess));
-            Log.d("randNum", String.valueOf(randNum));
             startActivity(intent);
         }
         else {

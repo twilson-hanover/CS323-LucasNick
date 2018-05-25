@@ -16,25 +16,34 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="Correct!" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:text="Continue"
-        android:onClick="onClickMainActivity" />
+        android:layout_weight="1"
+        android:text="Correct!"
+        android:textSize="35dp"/>
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Result: " />
+        android:layout_gravity="center_horizontal"
+        android:text="Result: "
+        android:textSize="25dp" />
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Your Guess: " />
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:text="Your Guess: "
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center_horizontal"
+        android:onClick="onClickMainActivity"
+        android:text="Continue" />
+
 </LinearLayout>

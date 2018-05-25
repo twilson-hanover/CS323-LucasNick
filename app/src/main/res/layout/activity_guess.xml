@@ -15,23 +15,23 @@
         android:id="@+id/enterGuess"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="10"
         android:layout_gravity="center"
-        android:text="Enter your guess:" />
+        android:text="Enter your guess:"
+        android:textSize="35dp" />
 
     <EditText
         android:id="@+id/myGuess"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_weight="0.25"/>
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"/>
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="wrap_content"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:layout_weight="2"
-        android:layout_gravity="center"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center_horizontal"
         android:text="Enter"
         android:onClick="onClickValidateGuess" />
 </LinearLayout>
