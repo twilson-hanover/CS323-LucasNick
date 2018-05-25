@@ -26,12 +26,11 @@
         android:layout_gravity="center_horizontal"
         android:entries="@array/numbers" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text=""
-        android:layout_weight="1"/>
+    <ImageView
+        android:id="@+id/mainImage"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        app:srcCompat="@drawable/db3b325ed46918ef" />
 
     <Button
         android:id="@+id/button"
