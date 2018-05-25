@@ -30,7 +30,8 @@
         android:id="@+id/mainImage"
         android:layout_width="350dp"
         android:layout_height="350dp"
-        app:srcCompat="@drawable/db3b325ed46918ef" />
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/db3b325ed46918ef" />
 
     <Button
         android:id="@+id/button"

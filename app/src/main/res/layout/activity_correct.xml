@@ -23,7 +23,7 @@
         android:layout_width="350dp"
         android:layout_height="250dp"
         android:layout_weight="2"
-        app:srcCompat="@drawable/thumbs_up_sign_1f44d" />
+        android:src="@drawable/thumbs_up_sign_1f44d" />
 
     <TextView
         android:id="@+id/textView4"
